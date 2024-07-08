@@ -1,0 +1,55 @@
+GET http://whattoeatapi.azurewebsites.net/ingredients
+###
+
+GET http://localhost:5112/ingredients
+
+###
+
+GET http://localhost:5112/tags
+
+###
+
+GET http://localhost:5112/recipes/1
+###
+
+POST http://localhost:5112/recipes
+Content-Type: application/json
+
+{
+  "name": "lazanja",
+  "descrition" : "super smaczna",
+  "imageUrl" : "Resources/Images/bigimage.jpg",
+  "prepTime" : 7,
+  "ingridients": 
+  [
+    "makaron",
+    "sos"
+  ],
+  "tags": 
+  [
+    "#Diner",
+    "wlochy"
+  ]
+}
+
+###
+PUT http://localhost:5112/recipes/1
+Content-Type: application/json
+
+{
+  "name": "Mleko",
+  "descrition" : "sojjjjjjjjj",
+  "imageUrl" : "zez/Image",
+  "prepTime" : 2,
+  "ingridients": 
+  [
+    "mojonez"
+  ],
+  "tags": 
+  [
+    "#zajonc"
+  ]
+}
+
+###
+DELETE http://localhost:5112/recipes/2
